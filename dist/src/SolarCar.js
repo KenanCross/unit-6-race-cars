@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.SolarCar = void 0;
 class SolarCar {
-    constructor(team, speed) {
+    constructor(team, speed = 0) {
         this.team = team;
         this.speed = speed;
     }
