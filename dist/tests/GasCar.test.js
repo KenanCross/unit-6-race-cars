@@ -2,6 +2,11 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const GasCar_1 = require("../src/GasCar");
 describe("Gas Car Tests", () => {
+    test("team and fuel are set by the constructor", () => {
+        const gasCar = new GasCar_1.GasCar("carOne");
+        expect(gasCar.team).toBeTruthy;
+        expect(gasCar.fuel).toBeTruthy;
+    });
     test("fuel starts at ten.", () => {
         const gasCarFuel = new GasCar_1.GasCar("carFuel");
         expect(gasCarFuel.fuel).toEqual(10);
