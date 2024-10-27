@@ -1,6 +1,11 @@
 import { GasCar } from "../src/GasCar";
 
 describe("Gas Car Tests", () => {
+	test("team and fuel are set by the constructor", () => {
+		const gasCar = new GasCar("carOne");
+		expect(gasCar.team).toBeTruthy;
+		expect(gasCar.fuel).toBeTruthy;
+	});
 	test("fuel starts at ten.", () => {
 		const gasCarFuel = new GasCar("carFuel");
 		expect(gasCarFuel.fuel).toEqual(10);
